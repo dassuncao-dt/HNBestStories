@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace HNBestStories.Services
 {
+    /// <summary>
+    /// Story Service implementation responsible for HNStory API comunications.
+    /// </summary>
     public class HNStoryService : IStoryService
     {
         private readonly HttpClient httpClient;

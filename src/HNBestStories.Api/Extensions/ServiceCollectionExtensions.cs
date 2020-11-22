@@ -25,7 +25,7 @@ namespace HNBestStories.Api.Extensions
                 c.BaseAddress = new Uri(options.ConnectionString);
             });
 
-            services.AddTransient<IStoryManager, StoryManager>();
+            services.AddScoped<IStoryManager, StoryManager>();
 
             return services;
         }

@@ -8,6 +8,10 @@ namespace HNBestStories.Interfaces
 {
     public interface IStoryManager
     {
+        /// <summary>
+        /// Retrieves the best stories.
+        /// </summary>
+        /// <returns>List of stories.</returns>
         Task<IEnumerable<StoryDTO>> GetBestStories();
     }
 }
